@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABADCCFA19B1B70600458366 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABADCCF919B1B70600458366 /* Foundation.framework */; };
+		ABADCCFC19B1B70600458366 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABADCCFB19B1B70600458366 /* CoreGraphics.framework */; };
+		ABADCCFE19B1B70600458366 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABADCCFD19B1B70600458366 /* UIKit.framework */; };
+		ABADCD0419B1B70600458366 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABADCD0219B1B70600458366 /* InfoPlist.strings */; };
+		ABADCD0619B1B70600458366 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADCD0519B1B70600458366 /* main.m */; };
+		ABADCD0A19B1B70600458366 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADCD0919B1B70600458366 /* AppDelegate.m */; };
+		ABADCD0C19B1B70600458366 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABADCD0B19B1B70600458366 /* Images.xcassets */; };
+		ABADCD1319B1B70600458366 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABADCD1219B1B70600458366 /* XCTest.framework */; };
+		ABADCD1419B1B70600458366 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABADCCF919B1B70600458366 /* Foundation.framework */; };
+		ABADCD1519B1B70600458366 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABADCCFD19B1B70600458366 /* UIKit.framework */; };
+		ABADCD1D19B1B70600458366 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABADCD1B19B1B70600458366 /* InfoPlist.strings */; };
+		ABADCD1F19B1B70600458366 /* Filmoteca_de_AlbaceteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADCD1E19B1B70600458366 /* Filmoteca_de_AlbaceteTests.m */; };
+		ABADCD2919B1B73100458366 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABADCD2819B1B73100458366 /* Storyboard.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABADCD1619B1B70600458366 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABADCCEE19B1B70600458366 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABADCCF519B1B70600458366;
+			remoteInfo = "Filmoteca de Albacete";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ABADCCF619B1B70600458366 /* Filmoteca de Albacete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Filmoteca de Albacete.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABADCCF919B1B70600458366 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ABADCCFB19B1B70600458366 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ABADCCFD19B1B70600458366 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ABADCD0119B1B70600458366 /* Filmoteca de Albacete-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Filmoteca de Albacete-Info.plist"; sourceTree = "<group>"; };
+		ABADCD0319B1B70600458366 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ABADCD0519B1B70600458366 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABADCD0719B1B70600458366 /* Filmoteca de Albacete-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Filmoteca de Albacete-Prefix.pch"; sourceTree = "<group>"; };
+		ABADCD0819B1B70600458366 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ABADCD0919B1B70600458366 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ABADCD0B19B1B70600458366 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ABADCD1119B1B70600458366 /* Filmoteca de AlbaceteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Filmoteca de AlbaceteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABADCD1219B1B70600458366 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		ABADCD1A19B1B70600458366 /* Filmoteca de AlbaceteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Filmoteca de AlbaceteTests-Info.plist"; sourceTree = "<group>"; };
+		ABADCD1C19B1B70600458366 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ABADCD1E19B1B70600458366 /* Filmoteca_de_AlbaceteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Filmoteca_de_AlbaceteTests.m; sourceTree = "<group>"; };
+		ABADCD2819B1B73100458366 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABADCCF319B1B70600458366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABADCCFC19B1B70600458366 /* CoreGraphics.framework in Frameworks */,
+				ABADCCFE19B1B70600458366 /* UIKit.framework in Frameworks */,
+				ABADCCFA19B1B70600458366 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABADCD0E19B1B70600458366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABADCD1319B1B70600458366 /* XCTest.framework in Frameworks */,
+				ABADCD1519B1B70600458366 /* UIKit.framework in Frameworks */,
+				ABADCD1419B1B70600458366 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABADCCED19B1B70600458366 = {
+			isa = PBXGroup;
+			children = (
+				ABADCCFF19B1B70600458366 /* Filmoteca de Albacete */,
+				ABADCD1819B1B70600458366 /* Filmoteca de AlbaceteTests */,
+				ABADCCF819B1B70600458366 /* Frameworks */,
+				ABADCCF719B1B70600458366 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABADCCF719B1B70600458366 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABADCCF619B1B70600458366 /* Filmoteca de Albacete.app */,
+				ABADCD1119B1B70600458366 /* Filmoteca de AlbaceteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABADCCF819B1B70600458366 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABADCCF919B1B70600458366 /* Foundation.framework */,
+				ABADCCFB19B1B70600458366 /* CoreGraphics.framework */,
+				ABADCCFD19B1B70600458366 /* UIKit.framework */,
+				ABADCD1219B1B70600458366 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABADCCFF19B1B70600458366 /* Filmoteca de Albacete */ = {
+			isa = PBXGroup;
+			children = (
+				ABADCD0819B1B70600458366 /* AppDelegate.h */,
+				ABADCD0919B1B70600458366 /* AppDelegate.m */,
+				ABADCD0B19B1B70600458366 /* Images.xcassets */,
+				ABADCD0019B1B70600458366 /* Supporting Files */,
+				ABADCD2819B1B73100458366 /* Storyboard.storyboard */,
+			);
+			path = "Filmoteca de Albacete";
+			sourceTree = "<group>";
+		};
+		ABADCD0019B1B70600458366 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABADCD0119B1B70600458366 /* Filmoteca de Albacete-Info.plist */,
+				ABADCD0219B1B70600458366 /* InfoPlist.strings */,
+				ABADCD0519B1B70600458366 /* main.m */,
+				ABADCD0719B1B70600458366 /* Filmoteca de Albacete-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABADCD1819B1B70600458366 /* Filmoteca de AlbaceteTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABADCD1E19B1B70600458366 /* Filmoteca_de_AlbaceteTests.m */,
+				ABADCD1919B1B70600458366 /* Supporting Files */,
+			);
+			path = "Filmoteca de AlbaceteTests";
+			sourceTree = "<group>";
+		};
+		ABADCD1919B1B70600458366 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABADCD1A19B1B70600458366 /* Filmoteca de AlbaceteTests-Info.plist */,
+				ABADCD1B19B1B70600458366 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABADCCF519B1B70600458366 /* Filmoteca de Albacete */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABADCD2219B1B70600458366 /* Build configuration list for PBXNativeTarget "Filmoteca de Albacete" */;
+			buildPhases = (
+				ABADCCF219B1B70600458366 /* Sources */,
+				ABADCCF319B1B70600458366 /* Frameworks */,
+				ABADCCF419B1B70600458366 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Filmoteca de Albacete";
+			productName = "Filmoteca de Albacete";
+			productReference = ABADCCF619B1B70600458366 /* Filmoteca de Albacete.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABADCD1019B1B70600458366 /* Filmoteca de AlbaceteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABADCD2519B1B70600458366 /* Build configuration list for PBXNativeTarget "Filmoteca de AlbaceteTests" */;
+			buildPhases = (
+				ABADCD0D19B1B70600458366 /* Sources */,
+				ABADCD0E19B1B70600458366 /* Frameworks */,
+				ABADCD0F19B1B70600458366 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABADCD1719B1B70600458366 /* PBXTargetDependency */,
+			);
+			name = "Filmoteca de AlbaceteTests";
+			productName = "Filmoteca de AlbaceteTests";
+			productReference = ABADCD1119B1B70600458366 /* Filmoteca de AlbaceteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABADCCEE19B1B70600458366 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = VSA;
+				TargetAttributes = {
+					ABADCD1019B1B70600458366 = {
+						TestTargetID = ABADCCF519B1B70600458366;
+					};
+				};
+			};
+			buildConfigurationList = ABADCCF119B1B70600458366 /* Build configuration list for PBXProject "Filmoteca de Albacete" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ABADCCED19B1B70600458366;
+			productRefGroup = ABADCCF719B1B70600458366 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABADCCF519B1B70600458366 /* Filmoteca de Albacete */,
+				ABADCD1019B1B70600458366 /* Filmoteca de AlbaceteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABADCCF419B1B70600458366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABADCD0419B1B70600458366 /* InfoPlist.strings in Resources */,
+				ABADCD0C19B1B70600458366 /* Images.xcassets in Resources */,
+				ABADCD2919B1B73100458366 /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABADCD0F19B1B70600458366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABADCD1D19B1B70600458366 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABADCCF219B1B70600458366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABADCD0A19B1B70600458366 /* AppDelegate.m in Sources */,
+				ABADCD0619B1B70600458366 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABADCD0D19B1B70600458366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABADCD1F19B1B70600458366 /* Filmoteca_de_AlbaceteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABADCD1719B1B70600458366 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABADCCF519B1B70600458366 /* Filmoteca de Albacete */;
+			targetProxy = ABADCD1619B1B70600458366 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ABADCD0219B1B70600458366 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABADCD0319B1B70600458366 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ABADCD1B19B1B70600458366 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABADCD1C19B1B70600458366 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABADCD2019B1B70600458366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ABADCD2119B1B70600458366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABADCD2319B1B70600458366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Filmoteca de Albacete/Filmoteca de Albacete-Prefix.pch";
+				INFOPLIST_FILE = "Filmoteca de Albacete/Filmoteca de Albacete-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ABADCD2419B1B70600458366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Filmoteca de Albacete/Filmoteca de Albacete-Prefix.pch";
+				INFOPLIST_FILE = "Filmoteca de Albacete/Filmoteca de Albacete-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ABADCD2619B1B70600458366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Filmoteca de Albacete.app/Filmoteca de Albacete";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Filmoteca de Albacete/Filmoteca de Albacete-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Filmoteca de AlbaceteTests/Filmoteca de AlbaceteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		ABADCD2719B1B70600458366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Filmoteca de Albacete.app/Filmoteca de Albacete";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Filmoteca de Albacete/Filmoteca de Albacete-Prefix.pch";
+				INFOPLIST_FILE = "Filmoteca de AlbaceteTests/Filmoteca de AlbaceteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABADCCF119B1B70600458366 /* Build configuration list for PBXProject "Filmoteca de Albacete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABADCD2019B1B70600458366 /* Debug */,
+				ABADCD2119B1B70600458366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABADCD2219B1B70600458366 /* Build configuration list for PBXNativeTarget "Filmoteca de Albacete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABADCD2319B1B70600458366 /* Debug */,
+				ABADCD2419B1B70600458366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ABADCD2519B1B70600458366 /* Build configuration list for PBXNativeTarget "Filmoteca de AlbaceteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABADCD2619B1B70600458366 /* Debug */,
+				ABADCD2719B1B70600458366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABADCCEE19B1B70600458366 /* Project object */;
+}
