@@ -10,12 +10,15 @@
 #import "ParseUtils.h"
 #import "PruebaStatic.h"
 #import "Constants.h"
+#import "Movie.h"
 
 @interface MovieTableViewController ()
 
 @end
 
 @implementation MovieTableViewController
+
+NSArray* titles;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -37,6 +40,10 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
     self.tableView.tableHeaderView = headerView;
+    titles = [ParseUtils getMoviesList:[ParseUtils loadHTML:SOURCE_URL]];
+//    for(NSString *movieTitle in titles) {
+//        NSLog(@"MOVIE: %@", movieTitle);
+//    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,7 +63,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 5;
+    return titles.count;
 }
 
 
@@ -67,9 +74,13 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault  reuseIdentifier:@"cell_movie"];
     }
-
-    cell.textLabel.text = [NSString stringWithFormat:@"%d", (int)indexPath.row];
-    // Configure the cell...
+    
+    Movie *movie = titles[(int)indexPath.row];
+    UILabel *title = (UILabel*)[cell viewWithTag:0];
+    UILabel *date = (UILabel*)[cell viewWithTag:1];
+    title.text = movie.title;
+    date.text = movie.date;
+       // Configure the cell...
     NSLog(@"ROW: %d", (int)indexPath.row);
     
     return cell;
@@ -78,9 +89,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"ROW: %d", (int)indexPath.row );
-    NSString* a = [ParseUtils loadHTML:SOURCE_URL];
-    NSLog(@"ROW: %@", a);
 }
 
 /*
