@@ -9,6 +9,7 @@
 #import "MovieTableViewController.h"
 #import "ParseUtils.h"
 #import "PruebaStatic.h"
+#import "Constants.h"
 
 @interface MovieTableViewController ()
 
@@ -78,7 +79,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"ROW: %d", (int)indexPath.row );
-    NSString* a = [ParseUtils loadHTML:@"http://www.google.es"];
+    NSString* a = [ParseUtils loadHTML:SOURCE_URL];
     NSLog(@"ROW: %@", a);
 }
 

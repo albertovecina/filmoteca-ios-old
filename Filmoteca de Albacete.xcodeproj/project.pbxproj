@@ -22,6 +22,7 @@
 		ABADCD2919B1B73100458366 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABADCD2819B1B73100458366 /* Storyboard.storyboard */; };
 		ABB65A0119B1E99A0035ECA1 /* MovieTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB65A0019B1E99A0035ECA1 /* MovieTableViewController.m */; };
 		ABDEBBEE1ABB03B500EAE576 /* ParseUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDEBBED1ABB03B500EAE576 /* ParseUtils.m */; };
+		ABE87B5D1B0DD0DD0089F2AA /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE87B5C1B0DD0DD0089F2AA /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		ABB65A0019B1E99A0035ECA1 /* MovieTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTableViewController.m; sourceTree = "<group>"; };
 		ABDEBBEC1ABB03B500EAE576 /* ParseUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseUtils.h; sourceTree = "<group>"; };
 		ABDEBBED1ABB03B500EAE576 /* ParseUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseUtils.m; sourceTree = "<group>"; };
+		ABE87B5B1B0DD0DD0089F2AA /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		ABE87B5C1B0DD0DD0089F2AA /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,7 @@
 		ABADCCFF19B1B70600458366 /* Filmoteca de Albacete */ = {
 			isa = PBXGroup;
 			children = (
+				ABE87B5A1B0DD0B70089F2AA /* Utils */,
 				ABADCD0819B1B70600458366 /* AppDelegate.h */,
 				ABADCD0919B1B70600458366 /* AppDelegate.m */,
 				ABADCD0B19B1B70600458366 /* Images.xcassets */,
@@ -122,8 +126,6 @@
 				ABADCD2819B1B73100458366 /* Storyboard.storyboard */,
 				ABB659FF19B1E99A0035ECA1 /* MovieTableViewController.h */,
 				ABB65A0019B1E99A0035ECA1 /* MovieTableViewController.m */,
-				ABDEBBEC1ABB03B500EAE576 /* ParseUtils.h */,
-				ABDEBBED1ABB03B500EAE576 /* ParseUtils.m */,
 			);
 			path = "Filmoteca de Albacete";
 			sourceTree = "<group>";
@@ -155,6 +157,17 @@
 				ABADCD1B19B1B70600458366 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABE87B5A1B0DD0B70089F2AA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ABDEBBEC1ABB03B500EAE576 /* ParseUtils.h */,
+				ABDEBBED1ABB03B500EAE576 /* ParseUtils.m */,
+				ABE87B5B1B0DD0DD0089F2AA /* Constants.h */,
+				ABE87B5C1B0DD0DD0089F2AA /* Constants.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE87B5D1B0DD0DD0089F2AA /* Constants.m in Sources */,
 				ABB65A0119B1E99A0035ECA1 /* MovieTableViewController.m in Sources */,
 				ABADCD0A19B1B70600458366 /* AppDelegate.m in Sources */,
 				ABADCD0619B1B70600458366 /* main.m in Sources */,
