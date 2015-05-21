@@ -20,6 +20,8 @@
 		ABADCD1D19B1B70600458366 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABADCD1B19B1B70600458366 /* InfoPlist.strings */; };
 		ABADCD1F19B1B70600458366 /* Filmoteca_de_AlbaceteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADCD1E19B1B70600458366 /* Filmoteca_de_AlbaceteTests.m */; };
 		ABADCD2919B1B73100458366 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABADCD2819B1B73100458366 /* Storyboard.storyboard */; };
+		ABB65A0119B1E99A0035ECA1 /* MovieTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB65A0019B1E99A0035ECA1 /* MovieTableViewController.m */; };
+		ABDEBBEE1ABB03B500EAE576 /* ParseUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDEBBED1ABB03B500EAE576 /* ParseUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,10 @@
 		ABADCD1C19B1B70600458366 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ABADCD1E19B1B70600458366 /* Filmoteca_de_AlbaceteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Filmoteca_de_AlbaceteTests.m; sourceTree = "<group>"; };
 		ABADCD2819B1B73100458366 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		ABB659FF19B1E99A0035ECA1 /* MovieTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTableViewController.h; sourceTree = "<group>"; };
+		ABB65A0019B1E99A0035ECA1 /* MovieTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTableViewController.m; sourceTree = "<group>"; };
+		ABDEBBEC1ABB03B500EAE576 /* ParseUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseUtils.h; sourceTree = "<group>"; };
+		ABDEBBED1ABB03B500EAE576 /* ParseUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,10 @@
 				ABADCD0B19B1B70600458366 /* Images.xcassets */,
 				ABADCD0019B1B70600458366 /* Supporting Files */,
 				ABADCD2819B1B73100458366 /* Storyboard.storyboard */,
+				ABB659FF19B1E99A0035ECA1 /* MovieTableViewController.h */,
+				ABB65A0019B1E99A0035ECA1 /* MovieTableViewController.m */,
+				ABDEBBEC1ABB03B500EAE576 /* ParseUtils.h */,
+				ABDEBBED1ABB03B500EAE576 /* ParseUtils.m */,
 			);
 			path = "Filmoteca de Albacete";
 			sourceTree = "<group>";
@@ -243,8 +253,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB65A0119B1E99A0035ECA1 /* MovieTableViewController.m in Sources */,
 				ABADCD0A19B1B70600458366 /* AppDelegate.m in Sources */,
 				ABADCD0619B1B70600458366 /* main.m in Sources */,
+				ABDEBBEE1ABB03B500EAE576 /* ParseUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -350,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -441,6 +453,7 @@
 				ABADCD2419B1B70600458366 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABADCD2519B1B70600458366 /* Build configuration list for PBXNativeTarget "Filmoteca de AlbaceteTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +462,7 @@
 				ABADCD2719B1B70600458366 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
