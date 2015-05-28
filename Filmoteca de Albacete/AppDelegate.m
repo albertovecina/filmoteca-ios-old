@@ -19,6 +19,7 @@
 //    self.window.backgroundColor = [UIColor whiteColor];
 //    [self.window makeKeyAndVisible];
     [[UINavigationBar appearance] setBarTintColor:[UIColors colorFromHexString:COLOR_PRIMARY ]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
 
     return YES;
 }
