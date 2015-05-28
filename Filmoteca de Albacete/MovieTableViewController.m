@@ -11,14 +11,15 @@
 #import "PruebaStatic.h"
 #import "Constants.h"
 #import "Movie.h"
+#import "DetailViewController.h"
+#import "AFNetworking.h"
+#import "SVProgressHUD.h"
 
 @interface MovieTableViewController ()
-
+@property(strong, nonatomic)     NSArray* titles;
 @end
 
 @implementation MovieTableViewController
-
-NSArray* titles;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -32,18 +33,19 @@ NSArray* titles;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
-    self.tableView.tableHeaderView = headerView;
-    titles = [ParseUtils getMoviesList:[ParseUtils loadHTML:SOURCE_URL]];
-//    for(NSString *movieTitle in titles) {
-//        NSLog(@"MOVIE: %@", movieTitle);
-//    }
+   
+    [SVProgressHUD showWithStatus:@"Cargando..." maskType:SVProgressHUDMaskTypeClear];
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.responseSerializer = [AFCompoundResponseSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    [manager GET:SOURCE_URL parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSString *responseString = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+        self.titles = [ParseUtils parseMoviesList:responseString];
+        [self.tableView reloadData];
+        [SVProgressHUD dismiss];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,7 +65,7 @@ NSArray* titles;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return titles.count;
+    return self.titles.count;
 }
 
 
@@ -75,13 +77,11 @@ NSArray* titles;
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault  reuseIdentifier:@"cell_movie"];
     }
     
-    Movie *movie = titles[(int)indexPath.row];
+    Movie *movie = self.titles[(int)indexPath.row];
     UILabel *title = (UILabel*)[cell viewWithTag:0];
     UILabel *date = (UILabel*)[cell viewWithTag:1];
     title.text = movie.title;
     date.text = movie.date;
-       // Configure the cell...
-    NSLog(@"ROW: %d", (int)indexPath.row);
     
     return cell;
 }
@@ -89,6 +89,10 @@ NSArray* titles;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    DetailViewController *detail = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
+    Movie *movie = [self.titles objectAtIndex:indexPath.row];
+    detail.movie = movie;
+    [self.navigationController pushViewController:detail animated:YES];
 }
 
 /*

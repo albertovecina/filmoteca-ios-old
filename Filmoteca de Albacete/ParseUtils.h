@@ -10,7 +10,8 @@
 
 @interface ParseUtils : NSObject
 
-+ (NSString*) loadHTML: (NSString*) urlSring;
-+ (NSMutableArray*) getMoviesList: (NSString*) source;
++ (NSString*) downloadHTML: (NSString*) urlSring;
++ (NSMutableArray*) parseMoviesList: (NSString*) source;
++ (NSString*) parseDetail: (NSString*) sourceHTML;
 
 @end

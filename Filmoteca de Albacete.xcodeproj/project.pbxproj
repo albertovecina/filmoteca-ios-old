@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB117AF91B1227A600926E1A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB117AF81B1227A600926E1A /* DetailViewController.m */; };
 		ABADCCFA19B1B70600458366 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABADCCF919B1B70600458366 /* Foundation.framework */; };
 		ABADCCFC19B1B70600458366 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABADCCFB19B1B70600458366 /* CoreGraphics.framework */; };
 		ABADCCFE19B1B70600458366 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABADCCFD19B1B70600458366 /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 /* Begin PBXFileReference section */
 		2EEB737D3F58C18E60048F11 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		569BBE2D5DAD37B11D74E66B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AB117AF71B1227A600926E1A /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		AB117AF81B1227A600926E1A /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		ABADCCF619B1B70600458366 /* Filmoteca de Albacete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Filmoteca de Albacete.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABADCCF919B1B70600458366 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ABADCCFB19B1B70600458366 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -146,6 +149,8 @@
 				ABADCD2819B1B73100458366 /* Storyboard.storyboard */,
 				ABB659FF19B1E99A0035ECA1 /* MovieTableViewController.h */,
 				ABB65A0019B1E99A0035ECA1 /* MovieTableViewController.m */,
+				AB117AF71B1227A600926E1A /* DetailViewController.h */,
+				AB117AF81B1227A600926E1A /* DetailViewController.m */,
 			);
 			path = "Filmoteca de Albacete";
 			sourceTree = "<group>";
@@ -336,6 +341,7 @@
 				ABADCD0A19B1B70600458366 /* AppDelegate.m in Sources */,
 				ABADCD0619B1B70600458366 /* main.m in Sources */,
 				ABDEBBEE1ABB03B500EAE576 /* ParseUtils.m in Sources */,
+				AB117AF91B1227A600926E1A /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
