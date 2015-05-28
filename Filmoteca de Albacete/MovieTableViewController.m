@@ -13,7 +13,7 @@
 #import "Movie.h"
 #import "DetailViewController.h"
 #import "AFNetworking.h"
-#import "SVProgressHUD.h"
+#import "ProgressAlert.h"
 
 @interface MovieTableViewController ()
 @property(strong, nonatomic)     NSArray* titles;
@@ -34,7 +34,7 @@
 {
     [super viewDidLoad];
    
-    [SVProgressHUD showWithStatus:@"Cargando..." maskType:SVProgressHUDMaskTypeClear];
+    [ProgressAlert showProgress];
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer = [AFCompoundResponseSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
@@ -42,7 +42,7 @@
         NSString *responseString = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
         self.titles = [ParseUtils parseMoviesList:responseString];
         [self.tableView reloadData];
-        [SVProgressHUD dismiss];
+        [ProgressAlert hideProgress];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];

@@ -8,9 +8,9 @@
 
 #import "DetailViewController.h"
 #import "ParseUtils.h"
-#import "SVProgressHUD.h"
 #import "AFNetworking.h"
 #import "ParseUtils.h"
+#import "ProgressAlert.h"
 
 @interface DetailViewController ()
     @property(strong, nonatomic) NSMutableData *requestData;
@@ -27,7 +27,7 @@
     NSURL *url = [NSURL URLWithString:movie.url];
     [self.webView loadHTMLString:html baseURL:url];*/
     
-    [SVProgressHUD showWithStatus:@"Cargando..." maskType:SVProgressHUDMaskTypeClear];
+    [ProgressAlert showProgress];
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer = [AFCompoundResponseSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
@@ -36,7 +36,7 @@
         NSString *parsedHTML = [ParseUtils parseDetail:responseString];
         NSURL *url = [NSURL URLWithString:movie.url];
         [self.webView loadHTMLString:parsedHTML baseURL:url];
-        [SVProgressHUD dismiss];
+        [ProgressAlert hideProgress];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];

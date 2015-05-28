@@ -82,7 +82,7 @@
         <!--navigationController-->
         <scene sceneID="eKD-gO-7J9">
             <objects>
-                <navigationController title="navigationController" id="2BD-y7-uIr" sceneMemberID="viewController">
+                <navigationController title="navigationController" id="2BD-y7-uIr" customClass="UIFilmotecaNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xto-23-xHs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -101,4 +101,5 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

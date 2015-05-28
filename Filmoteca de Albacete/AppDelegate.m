@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Foundation/Foundation.h>
+#import "UIColors.h"
 
 @implementation AppDelegate
 
@@ -17,6 +18,8 @@
 //    // Override point for customization after application launch.
 //    self.window.backgroundColor = [UIColor whiteColor];
 //    [self.window makeKeyAndVisible];
+    [[UINavigationBar appearance] setBarTintColor:[UIColors colorFromHexString:COLOR_PRIMARY ]];
+
     return YES;
 }
 
