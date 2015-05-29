@@ -16,7 +16,7 @@
 {
     [SVProgressHUD setBackgroundColor:[UIColors colorFromHexString: COLOR_PRIMARY]];
     [SVProgressHUD setForegroundColor:[UIColors colorFromHexString: COLOR_WHITE]];
-    [SVProgressHUD showWithStatus:@"Cargando..."];
+    [SVProgressHUD showWithStatus:NSLocalizedString(@"LoadingAlert", @"Loading message")];
 }
 
 + (void) hideProgress

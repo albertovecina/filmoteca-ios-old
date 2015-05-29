@@ -42,7 +42,7 @@
         NSString *responseString = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
         self.titles = [ParseUtils parseMoviesList:responseString];
         [self.tableView reloadData];
-        self.navigationItem.title = [NSString stringWithFormat:@"Programación (%d)", self.titles.count ];
+        self.navigationItem.title = [NSString stringWithFormat:NSLocalizedString(@"DetailTitle", @"Title to show the number of movies"), self.titles.count ];
         [ProgressAlert hideProgress];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);

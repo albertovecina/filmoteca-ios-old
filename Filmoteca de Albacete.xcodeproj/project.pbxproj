@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AB117AF91B1227A600926E1A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB117AF81B1227A600926E1A /* DetailViewController.m */; };
+		AB75EDCB1B18553100907AC3 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB75EDCD1B18553100907AC3 /* Storyboard.storyboard */; };
+		AB75EDD41B185DBB00907AC3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB75EDD61B185DBB00907AC3 /* Localizable.strings */; };
 		AB83E2431B17612000CEC1D0 /* UIColors.m in Sources */ = {isa = PBXBuildFile; fileRef = AB83E2421B17612000CEC1D0 /* UIColors.m */; };
 		ABADCCFA19B1B70600458366 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABADCCF919B1B70600458366 /* Foundation.framework */; };
 		ABADCCFC19B1B70600458366 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABADCCFB19B1B70600458366 /* CoreGraphics.framework */; };
@@ -21,7 +23,6 @@
 		ABADCD1519B1B70600458366 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABADCCFD19B1B70600458366 /* UIKit.framework */; };
 		ABADCD1D19B1B70600458366 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABADCD1B19B1B70600458366 /* InfoPlist.strings */; };
 		ABADCD1F19B1B70600458366 /* Filmoteca_de_AlbaceteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADCD1E19B1B70600458366 /* Filmoteca_de_AlbaceteTests.m */; };
-		ABADCD2919B1B73100458366 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABADCD2819B1B73100458366 /* Storyboard.storyboard */; };
 		ABB65A0119B1E99A0035ECA1 /* MovieTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB65A0019B1E99A0035ECA1 /* MovieTableViewController.m */; };
 		ABC887EA1B17691300CBF073 /* ProgressAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC887E91B17691300CBF073 /* ProgressAlert.m */; };
 		ABC887ED1B17718100CBF073 /* UIFilmotecaNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC887EC1B17718100CBF073 /* UIFilmotecaNavigationController.m */; };
@@ -46,6 +47,11 @@
 		569BBE2D5DAD37B11D74E66B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AB117AF71B1227A600926E1A /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		AB117AF81B1227A600926E1A /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		AB75EDC91B18548800907AC3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB75EDCA1B18548800907AC3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB75EDCC1B18553100907AC3 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = es; path = es.lproj/Storyboard.storyboard; sourceTree = "<group>"; };
+		AB75EDD51B185DBB00907AC3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AB75EDD71B185DD300907AC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AB83E2411B17612000CEC1D0 /* UIColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColors.h; sourceTree = "<group>"; };
 		AB83E2421B17612000CEC1D0 /* UIColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColors.m; sourceTree = "<group>"; };
 		ABADCCF619B1B70600458366 /* Filmoteca de Albacete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Filmoteca de Albacete.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +70,6 @@
 		ABADCD1A19B1B70600458366 /* Filmoteca de AlbaceteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Filmoteca de AlbaceteTests-Info.plist"; sourceTree = "<group>"; };
 		ABADCD1C19B1B70600458366 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ABADCD1E19B1B70600458366 /* Filmoteca_de_AlbaceteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Filmoteca_de_AlbaceteTests.m; sourceTree = "<group>"; };
-		ABADCD2819B1B73100458366 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		ABB659FF19B1E99A0035ECA1 /* MovieTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTableViewController.h; sourceTree = "<group>"; };
 		ABB65A0019B1E99A0035ECA1 /* MovieTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTableViewController.m; sourceTree = "<group>"; };
 		ABC887E81B17691300CBF073 /* ProgressAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressAlert.h; sourceTree = "<group>"; };
@@ -165,7 +170,7 @@
 				ABADCD0919B1B70600458366 /* AppDelegate.m */,
 				ABADCD0B19B1B70600458366 /* Images.xcassets */,
 				ABADCD0019B1B70600458366 /* Supporting Files */,
-				ABADCD2819B1B73100458366 /* Storyboard.storyboard */,
+				AB75EDCD1B18553100907AC3 /* Storyboard.storyboard */,
 				ABB659FF19B1E99A0035ECA1 /* MovieTableViewController.h */,
 				ABB65A0019B1E99A0035ECA1 /* MovieTableViewController.m */,
 				AB117AF71B1227A600926E1A /* DetailViewController.h */,
@@ -183,6 +188,7 @@
 				ABADCD0219B1B70600458366 /* InfoPlist.strings */,
 				ABADCD0519B1B70600458366 /* main.m */,
 				ABADCD0719B1B70600458366 /* Filmoteca de Albacete-Prefix.pch */,
+				AB75EDD61B185DBB00907AC3 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -287,6 +293,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				es,
 			);
 			mainGroup = ABADCCED19B1B70600458366;
 			productRefGroup = ABADCCF719B1B70600458366 /* Products */;
@@ -305,8 +312,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABADCD0419B1B70600458366 /* InfoPlist.strings in Resources */,
+				AB75EDD41B185DBB00907AC3 /* Localizable.strings in Resources */,
 				ABADCD0C19B1B70600458366 /* Images.xcassets in Resources */,
-				ABADCD2919B1B73100458366 /* Storyboard.storyboard in Resources */,
+				AB75EDCB1B18553100907AC3 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,10 +398,28 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		AB75EDCD1B18553100907AC3 /* Storyboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB75EDCC1B18553100907AC3 /* es */,
+			);
+			name = Storyboard.storyboard;
+			sourceTree = "<group>";
+		};
+		AB75EDD61B185DBB00907AC3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB75EDD51B185DBB00907AC3 /* es */,
+				AB75EDD71B185DD300907AC3 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		ABADCD0219B1B70600458366 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				ABADCD0319B1B70600458366 /* en */,
+				AB75EDC91B18548800907AC3 /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -402,6 +428,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				ABADCD1C19B1B70600458366 /* en */,
+				AB75EDCA1B18548800907AC3 /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

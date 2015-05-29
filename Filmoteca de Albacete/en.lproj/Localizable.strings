@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Filmoteca de Albacete
+
+  Created by Alberto Vecina Sánchez on 29/5/15.
+  Copyright (c) 2015 VSA. All rights reserved.
+*/
+
+"LoadingAlert"              = "Loading...";
+
+"DetailTitle"               = "Showtimes (%d)";
