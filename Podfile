@@ -2,4 +2,4 @@
 platform :ios, '8.3'
 pod 'HTMLReader', '0.7.1'
 pod 'SVProgressHUD', :head
-pod 'AFNetworking', :head
+pod "AFNetworking", "~> 2.0"

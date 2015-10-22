@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4482C40853B0AA8D7F4A48A9965D0350C8FA19C8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "92950DC4-153A-46CE-A2C4-20C8042C87A6" : 0,
+    "4482C40853B0AA8D7F4A48A9965D0350C8FA19C8" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B59F5916-1378-428A-BA48-6D5DC4053640",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "92950DC4-153A-46CE-A2C4-20C8042C87A6" : "Filmoteca de Albacete",
+    "4482C40853B0AA8D7F4A48A9965D0350C8FA19C8" : "Filmoteca%20de%20Albacete"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Filmoteca de Albacete",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Filmoteca de Albacete.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:VSADevelopment\/filmoteca-de-albacete.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4482C40853B0AA8D7F4A48A9965D0350C8FA19C8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/bitbucket.org\/VSADevelopment\/filmoteca-de-albacete.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "92950DC4-153A-46CE-A2C4-20C8042C87A6"
+    }
+  ]
+}
